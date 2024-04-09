@@ -1,0 +1,44 @@
+name: SimpleTeleport
+version: '${version}'
+main: fi.makelord95.simpleteleport.SimpleTeleport
+api-version: '1.20'
+author: MakeLord95
+description: Simple teleport plugin
+
+permissions:
+  simpleteleport.tpa:
+    description: Allow player to use /tpa command
+    default: true
+
+  simpleteleport.tphere:
+    description: Allow player to use /tphere command
+    default: true
+
+  simpleteleport.tpaccept:
+    description: Allow player to use /tpaccept command
+    default: true
+
+  simpleteleport.tpdeny:
+    description: Allow player to use /tpdeny command
+    default: true
+
+commands:
+  tpa:
+    description: Teleport to player
+    usage: /tpa <player>
+    permission: simpleteleport.tpa
+
+  tphere:
+    description: Teleport player to you
+    usage: /tphere <player>
+    permission: simpleteleport.tphere
+
+  tpaccept:
+    description: Accept teleport request
+    usage: /tpaccept
+    permission: simpleteleport.tpaccept
+
+  tpdeny:
+    description: Deny teleport request
+    usage: /tpdeny
+    permission: simpleteleport.tpdeny
